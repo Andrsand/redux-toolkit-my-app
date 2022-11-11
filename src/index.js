@@ -11,7 +11,7 @@ const root = createRoot(container);
 
 root.render(
   <React.StrictMode>
-    <Provider store={store}>
+    <Provider store={store}> {/* Как только хранилище создано, мы можем сделать его доступным для наших компонентов React, поместив React-Redux <Provider>вокруг нашего приложения */}
       <App />
     </Provider>
   </React.StrictMode>
